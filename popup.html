@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+  <head>
+  <script src="/lib/jquery-2.2.1.js"></script>
+
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        margin: 1em;
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        width: 500px;
+      }
+      div{
+        margin-top: 1em;
+      }
+      #inputs{
+        margin-bottom: 1em;
+      }
+      button{
+        margin-right: 1em;
+      }
+    </style>
+
+
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="inside">
+      <div id="status">Checking...</div>
+      <div id="content"></div>
+      <div id="url"></div>
+    </div>
+    <div id="inputs"></div>
+  </body>
+  <script>
+$('$save').click(function(){
+  alert("hello");
+});
+  document.getElementById("save").onclick = function(){
+  alert("hello");
+};
+
+document.getElementById("restore").onclick = function(){
+  alert("restore");
+};
+  </script>
+</html>
+
